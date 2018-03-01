@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/headermenu.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/team.css">
+<link rel="icon" href="logoVersion4.png" type="image/x-icon"/>
+<style>
+div.sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+</style>
+<html>
+  <title>FrostBurn Games</title>
+  <head>
+    <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
+      <input type="image" src="logoVersion4.png" onclick="returnm();" style="width:60px;height:60px;float: left" />
+      <p style=""><b>Welcome to FrostBurn Games</b></p>
+      <ul style="font-family: sans-serif;">
+        <li><a href="index.html">Frontpage</a></li>
+        <!-- <li><a href="#surveyhref"><i>Survey</i></a></li> -->
+        <li><a href="slidez.html">Slidez</a></li>
+        <li><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report a bug</a></li>
+        <!-- <li><a href="account.html">Local-settings</a></li> -->
+        <!-- <li><a href="gamelist.html">Gamelist</a></li> -->
+      </ul>
+    </div>
+  </head>
+  <body>
+    <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
+    	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report an error</a></b> website made by <a href="https://twitter.com/Kres0345">@Kres0345</a>, <i>Tip of the load:</i></p><p id="randomtip"></p>
+    </div>
+    <script type="text/javascript" src="js/randomtip.js"></script>
+  </body>
+  <script> //Quick runs
+  var cookies = document.cookie;
+  if(cookies == "headerdisabled=true"){
+    var x = document.getElementById("header");
+    x.style.display = "none";
+    console.log("Header disabled")
+  }
+  </script>
+  <body>
+    <h1>The development team</h1>
+    <p>Owner/CEO/Lead programmer - Kresten Laust</p>
+    <p>Manager - Marcel</p>
+  </body>
+</html>
+<script> //Quick runs
+var cookies = document.cookie;
+if(cookies == "headerdisabled=true"){
+  var x = document.getElementById("header");
+  x.style.display = "none";
+  console.log("Header disabled")
+}
+</script>
+<script>
+function returnm() {
+  window.location.href = "index.html";
+}
+</script>

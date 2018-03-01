@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/gamelist.css">
+<link rel="stylesheet" type="text/css" href="css/headermenu.css">
+<link rel="stylesheet" type="text/css" href="css/button.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<html>
+  <link rel="icon" href="logoVersion4.png" type="image/x-icon"/>
+  <title>Gamelist - FrostBurn Games</title>
+  <head>
+    <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
+      <input type="image" src="logoVersion3.png" onclick="returnm();" style="width:60px;height:60px;float: left" />
+      <p style=""><b>Welcome to FrostBurn Games</b></p>
+      <ul style="font-family: sans-serif;">
+        <li><a href="index.html">Frontpage</a></li>
+        <li><a href="#surveyhref"><i>Survey</i></a></li>
+        <li><a href="slidez.html">Slidez</a></li>
+        <li><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report a bug</a></li>
+        <!-- <li><a href="account.html">Local-settings</a></li> -->
+        <!-- <li><a href="gamelist.html">Gamelist</a></li> -->
+      </ul>
+    </div>
+    <script> //Quick runs
+    var cookies = document.cookie;
+    if(cookies == "headerdisabled=true"){
+      var x = document.getElementById("header");
+      x.style.display = "none";
+      console.log("Header disabled")
+    }
+    </script><br>
+    <div style="text-align:center;"> <!-- buttons -->
+      <input class="button" id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
+      <input class="button" id="return to menu" type="button" value="Return to Menu" onclick="returnm();" />
+    </div>
+    <h1 id=centertext >Gamelist</h1>
+    <div id=centertext ><!--Text on gamelist.html-->
+      <p>Right now you can search with CTRL+F</p>
+      <p>I havent implemented a search field yet.</p>
+      <br><p><b>Notice: This page is outdated.</b></p>
+    </div>
+    <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
+    	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website made by kres0345, <i>Tip of the load:</i></p><p id="randomtip"></p>
+    </div>
+    <script type="text/javascript" src="js/randomtip.js"></script>
+    <!-- Notification bell (start) -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "f34efa34-16df-42fd-802c-94f04425a9f0",
+        });
+      });
+    </script>
+    <!-- Notification bell (end) -->
+  </head>
+  <body>
+    <div id="gamelistgames"> <!--New game player, legetøj fra--><br>
+    	<a href="gameplayer.html?game=strikeforceheroes">Strike Force Heroes</p></a>
+      <a href="gameplayer.html?game=strikeforceheroesnotdoppler">Strike Force Heroes(NotDoppler)</p></a>
+    	<a href="gameplayer.html?game=strikeforceheroes2">Strike Force Heroes 2</p></a>
+    	<a href="gameplayer.html?game=strikeforceheroes3">Strike Force Heroes 3</p></a>
+    	<a href="gameplayer.html?game=stickfigurebadminton2">Stick Figure Badminton 2</p></a>
+    	<a href="gameplayer.html?game=stickfigurebadminton3">Stick Figure Badminton 3</p></a>
+      <a href="gameplayer.html?game=raze">Raze</p></a>
+      <a href="gameplayer.html?game=raze2">Raze 2</p></a>
+      <a href="gameplayer.html?game=raze3">Raze 3</p></a>
+      <a href="gameplayer.html?game=knightmaretower">Knightmare Tower</p></a>
+      <a href="gameplayer.html?game=zombotron">Zombotron</p></a>
+      <a href="gameplayer.html?game=zombotron2">Zombotron 2</p></a>
+      <a href="gameplayer.html?game=hauntthehouse">Haunt The House</p></a>
+      <a href="gameplayer.html?game=plazmaburst2">Plazma Burst 2</p></a>
+      <a href="gameplayer.html?game=ageofwar">Age of War</p></a>
+      <a href="gameplayer.html?game=idlesword">Idle Sword</p></a>
+      <a href="gameplayer.html?game=flight">Flight</p></a>
+      <a href="gameplayer.html?game=jacksmith">Jack Smith</p></a>
+      <a href="gameplayer.html?game=cyclomaniacs">Cyclomaniacs</p></a>
+      <a href="gameplayer.html?game=cyclomaniacs2">Cyclomaniacs 2</p></a>
+      <a href="gameplayer.html?game=dolphinolympics2">Dolphinolympics 2</p></a>
+      <a href="gameplayer.html?game=worldbasketcup">World Basket Cup</p></a>
+      <a href="gameplayer.html?game=armormayhem">Armor Mayhem</p></a>
+      <a href="gameplayer.html?game=armormayhemme">Armor Mayhem Map Editor</p></a>
+      <a href="gameplayer.html?game=ageofwar2">Age of War 2</p></a>
+      <a href="gameplayer.html?game=sydneyshark">Sydney Shark</p></a>
+    </div>
+    <!-- <a href="index.html">Return to menu</a> -->
+    <script>
+    function returnm() {
+      window.location.href = "index.html";
+    }
+    function toggleheader() {
+    var x = document.getElementById("header");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        document.cookie = "headerdisabled=false;";
+        //document.cookie = "headerdisabled=false; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
+        //var cookie = document.cookie;
+        console.log(document.cookie);
+    } else {
+        x.style.display = "none";
+        document.cookie = "headerdisabled=true;";
+        //var cookie = document.cookie;
+        console.log(document.cookie);
+    }
+    }
+    </script>
+  </body>
+</html>
+
+<!--
+Secret messeage:
+01101000 01100101 01101100 01101100 01101111 00100000 01101000 01101111 01110111 00100000 01100001 01110010 01100101 00100000 01111001 01101111 01110101 01110010 00100000 01100100 01100001 01111001 00111111
+-->

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="theme-color" content="#277979"/>
+
+<link rel="stylesheet" type="text/css" href="css/headermenu.css">
+<link rel="stylesheet" type="text/css" href="css/buttongp.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<!--
+This is the new game player
+
+Don't stare at the code.
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+div.sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+p {
+  font-family: sans-serif;
+}
+h1 {
+  font-family: sans-serif;
+}
+body {
+  background-color: #277979; /* #33cccc Cyan color */
+}
+/*
+#header {
+  margin-left: 5%;
+  margin-right: 5%;
+  box-shadow: 3px 5px 7px #666666;
+  border: 1px solid black;
+  text-align: center;
+  background-color: #ffffff;
+  z-index: 1;
+}*/
+#gameplayer {
+  /*transform: scale(1.0);*/
+  text-align: left;
+}
+#closefullscreen {
+  z-index:1;
+  position: absolute;
+}
+#playersizedecrease {
+  z-index:1;
+  position: absolute;
+  margin-left: 7.1%;
+}
+#playersizeincrease {
+  z-index:1;
+  position: absolute;
+  margin-left: 12.0%;
+}
+#clearbackground {
+  z-index:1;
+  position: absolute;
+  margin-left: 17.1%;
+}
+#gameplayer, #title, #toolbarbelow{
+  text-align: center;
+}
+#disqus_thread{
+  background-color: #acb3bf;
+
+}
+/*
+#gameplayer {
+  text-align: center;
+}
+*/
+</style>
+<html>
+  <head>
+    <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
+      <input type="image" src="logoVersion4.png" onclick="returnm();" style="width:60px;height:60px;float: left" />
+      <p style=""><b>Welcome to FrostBurn Games</b></p>
+      <ul style="font-family: sans-serif;">
+        <li><a href="index.html">Frontpage</a></li>
+        <li><a href="slidez.html">Slidez</a></li>
+        <li><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report a bug</a></li>
+        <!-- <li><a href="account.html">Local-settings</a></li> -->
+        <!-- <li><a href="gamelist.html">Gamelist</a></li> -->
+      </ul>
+    </div>
+    <!-- Notification bell (start) -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "f34efa34-16df-42fd-802c-94f04425a9f0",
+        });
+      });
+    </script>
+    <!-- Notification bell (end) -->
+  </head>
+  <script> //Quick runs
+  var cookies = document.cookie;
+  if(cookies == "headerdisabled=true"){
+    var x = document.getElementById("header");
+    x.style.display = "none";
+    console.log("Header disabled")
+  }
+  </script>
+  <!--<link rel="icon" href="logoVersion4.png" type="image/x-icon"/>-->
+    <title id="tabtitle">Gameplayer - FrostBurn Games</title>
+    <br><!-- New in update 3.391 -->
+  <div id="title">
+  	<h1>Game player</h1>
+  </div><br>
+  <div id="toolbar">
+  <input class="button" id="playersizeincrease" type="button" value="Scale (+)" onclick="increaseplayer();" />
+  <input class="button" id="playersizedecrease" type="button" value="Scale (-)" onclick="decreaseplayer();" />
+  <input class="button" id="closefullscreen" type="button" value="Exit Fullscreen" onclick="closefullscreen();" />
+  <input class="button" id="clearbackground" type="button" value="Clear BG" onclick="clearbackground();" />
+  </div>
+  <!--<object><param /></object>-->
+  <div id="gameplayer"></div> <!-- This is the function that gets changed with url parameter -->
+
+  <body>
+    <div id="toolbarbelow">
+    <input class="button" id="return to menu" type="button" value="Return to Menu" onclick="returnm();" />
+    <input class="button" id="return to gamelist" type="button" value="Return to Gamelist" onclick="returngl();" />
+    <input class="button" id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
+    <input class="button" id="fullscreen" type="button" value="Full-Screen" onclick="fullscreen();" />
+    <!--<input class="button" id="gameclient" type="button" value="Open in client" onclick="openclient();" />-->
+    <div id=description></div>
+
+    <!-- frostburn-games.disqus.com comment section Start -->
+    <div id="disqus_thread"></div>
+    <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://frostburn-games.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments.</a></noscript>
+
+<!-- End of comment section -->
+
+    <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
+      <p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report an error</a></b> website made by <a href="https://twitter.com/Kres0345">@Kres0345</a>, <i>Tip of the load:</i></p><p id="randomtip"></p>
+    </div>
+    <script type="text/javascript" src="js/randomtip.js"></script>
+    <script id="dsq-count-scr" src="//frostburn-games.disqus.com/count.js" async></script> <!-- Part of comments-->
+  </body>
+  <script>
+    document.getElementById('closefullscreen').style.visibility = 'hidden';
+    document.getElementById('playersizeincrease').style.visibility = 'hidden';
+    document.getElementById('playersizedecrease').style.visibility = 'hidden';
+    document.getElementById('clearbackground').style.visibility = 'hidden';
+    function toggleheader() {
+    var x = document.getElementById("header");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        document.cookie = "headerdisabled=false;";
+        //document.cookie = "headerdisabled=false; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
+        //var cookie = document.cookie;
+        console.log(document.cookie);
+    } else {
+        x.style.display = "none";
+        document.cookie = "headerdisabled=true;";
+        //var cookie = document.cookie;
+        console.log(document.cookie);
+    }
+    }
+    // cookie
+    var cookie = document.cookie.split(';');
+    var i = 0;
+    while (cookie.length >= i) {
+      if(cookie[i] == "headerdisabled=true"){
+        var x = document.getElementById("header");
+        x.style.display = "none";
+        console.log("Header disabled")
+      }
+      console.log(cookie[i])
+      i++;
+    }
+    //cookie
+    function returngl() {
+      window.location.href = "gamelist.html";
+    }
+    function returnm() {
+      window.location.href = "index.html";
+    }
+    function fullscreen() {
+      document.getElementById("title").scrollIntoView();
+      gameplayer.style.cssText = "text-align: center; transform:scale(1.15);"
+      document.body.style.backgroundColor = "#0b0026" //#120028
+      document.getElementById('footer').style.visibility = 'hidden'; //hides the footer
+      var x = document.getElementById("header");
+      x.style.display = "none"; //Hides header
+      document.body.style.overflow = 'hidden'; //Hides scrollbars
+      document.getElementById('closefullscreen').style.visibility = 'visible'; //shows the close fullscreen button
+      document.getElementById('playersizeincrease').style.visibility = 'visible'; //Shows the "scale(+)" button
+      document.getElementById('playersizedecrease').style.visibility = 'visible'; //Shows the "scale(-)" button
+      //document.getElementById('clearbackground').style.visibility = 'visible'; //Shows the "clear bg" button
+    }
+    function closefullscreen() {
+      gameplayer.style.cssText = "text-align: center;" //transform:scale(1.0);
+      document.body.style.backgroundColor = ""
+      var x = document.getElementById("header");
+      x.style.display = "block";
+      document.body.style.overflow = 'visible';
+      document.getElementById('closefullscreen').style.visibility = 'hidden'; //Hides the close fullscreen button
+      document.getElementById('footer').style.visibility = 'visible'; //shows the footer
+      document.getElementById('playersizeincrease').style.visibility = 'hidden'; //Hides the "scale(+)" button
+      document.getElementById('playersizedecrease').style.visibility = 'hidden'; //Hides the "scale(-)" button
+      //document.getElementById('clearbackground').style.visibility = 'hidden'; //Hides the "clear bg" button
+    }
+    function increaseplayer() {
+      gameplayer.style.cssText = "text-align:center;vertical-align:middle;transform:scale(1.20);"
+    }
+    function decreaseplayer() {
+      gameplayer.style.cssText = "text-align:center;transform:scale(1.15);"
+    }
+    function clearbackground() {
+      document.body.style.backgroundColor = "White"
+    }
+    var runcorrect = false
+    var url1 = window.location.href
+    var res = url1.split("?");
+    var cp = res[1];
+    function openclient(){
+      window.open("frostclient:"+cp)
+    }
+
+  </script>
+  <script src="js/gameplayer.js"></script>
+  <script> //Flash detection script by dcicale: https://gist.github.com/dciccale/1116643
+  //Start flash detection
+    var hayFlash = function(a,b){try{a=new ActiveXObject(a+b+'.'+a+b)}catch(e){a=navigator.plugins[a+' '+b]}return!!a}('Shockwave','Flash')
+    if(hayFlash) {
+      console.log("Flash player is installed");
+    }
+    else {
+      console.log("Flash player is not installed: https://get.adobe.com/flashplayer/");
+      //alert("Flash player is not installed: https://get.adobe.com/flashplayer/");
+      document.getElementById('description').innerHTML = "<p><i>It appears that you don't have Adobe Flash Player installed, you can install it at: <a href='https://get.adobe.com/flashplayer/' target='_blank'>https://get.adobe.com/flashplayer/</a>, if the game is working then please report the bug on my <a href='https://github.com/kres0345/FrostBurn-Games/issues/new' target='_blank'>GitHub</a></i></p>"
+    }
+    //End flash detection
+  </script>
+  <link rel="icon" href="logoVersion4.png" type="image/x-icon"/>
+</html>
+<!--
+Secret messeage:
+01101000 01100101 01101100 01101100 01101111 00100000 01101000 01101111 01110111 00100000 01100001 01110010 01100101 00100000 01111001 01101111 01110101 01110010 00100000 01100100 01100001 01111001 00111111
+-->

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!-- Version: 3.8.5 -->
+<!--  my try to redirect mobile users
+<script type="text/javascript">
+if (screen.width <= 600) {
+  if (window.location.href != "https://kres0345.github.io/FrostBurn-Games/"){
+    document.location = "https://kres0345.github.io/FrostBurn-Games/";
+  }
+}
+</script>-->
+
+<html>
+
+  <head>
+    <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-6044149035666154",
+        enable_page_level_ads: true
+      });
+    </script>-->
+    <link rel="icon" href="logoVersion4.png" type="image/x-icon"/>
+    <title>FrostBurn Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#277979"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Play free online games at Frostburn-Games.com, a wide array of games to choose from. We are also a game producing company working on our first game: Slidez." />
+    <meta name="google" content="nositelinkssearchbox" />
+    <meta name="keywords" content="frostburngames, frostburn-games, fbg, frostburn-games.com, slidez, slidesgame, fbg slidez, slidez fbg, slidez frostburn-games, frostburn-games slidez, slides, frostburngames.com, frostburngames.tk">
+    <link rel="stylesheet" type="text/css" href="css/headermenu.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" type="text/css" href="css/buttontg.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta name="google-site-verification" content="_gaE2YYlwTyuDMz1lf4s52xGWz1IaZNEGllXSC7rNxg" /> <!-- Website verfication -->
+    <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
+      <input type="image" src="logoVersion4.png" onclick='window.location.href = "index.html";' style="width:60px;height:60px;float:left" />
+      <p style=""><b>Welcome to FrostBurn Games</b></p>
+      <ul style="font-family: sans-serif;">
+        <li><a class="active" href="index.html">Frontpage</a></li>
+        <!-- <li><a href="#surveyhref"><i>Survey</i></a></li> -->
+        <li><a href="slidez.html">Slidez</a></li>
+        <li><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report a bug</a></li>
+        <!-- <li><a href="account.html">Local-settings</a></li> -->
+        <!-- <li><a href="gamelist.html">Gamelist</a></li> -->
+      </ul>
+    </div>
+
+    <!-- Notification bell (start) ->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "f34efa34-16df-42fd-802c-94f04425a9f0",
+        });
+      });
+    </script>
+    <!- Notification bell (end) -->
+    <script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/70eea41dc41de2fb35a0ddfbf5406519_0.js" async></script>
+  </head>
+  <script> //Quick runs
+  var cookies = document.cookie;
+  if(cookies == "headerdisabled=true"){
+    var x = document.getElementById("header");
+    x.style.display = "none";
+    console.log("Header disabled")
+  }
+  </script>
+  <noscript>Sorry, your browser does not support JavaScript, please use a suitable browser instead like Chrome or Firefox.</noscript>
+  <body class="content">
+    <br>
+    <!--<input class="button" id="gamelistbutton" type="button" value="Gamelist" onclick="gamelist();" />-->
+    <!-- <a href="gamelist.html">Game List</a> -->
+    <input class="button" id="toggleheader" type="button" value="Toggle Header" onclick="toggleheader();" />
+    <input id="audioplayerbtn" class="button" type="button" value="Start audio player" onclick="popitup2();" />
+    <!--<input class="button" type="button" value="Basic View" onclick="basic();" />-->
+    <br><br>
+    <a style="font-family: sans-serif;" class="button" href="http://ssl.FrostBurn-Games.com" target="_top">Enable SSL(Gives best mobile experince)</a>
+    <div>
+      <!--<p>Go ahead, find a game.</p>-->
+      <br>
+    </div>
+    <!--<input type="text" name="search" id="searchbar" placeholder="A really great game...">-->
+    <br><br>
+    <div id="topgames">
+      <p style="font-size:120%;"><b>Games:</b></p>
+      <!--<p>Don't spam the "Row view" button, as that is is in beta currently and will slow it down.</p>-->
+      <!--<input type="button" class="button" value="Row view" onclick="rowview();" />-->
+      <!--<input type="button" class="button" value="column view" onclick="columnview();" />-->
+      <div class="row">
+        <div class="games"><p class="gamesborder"><image class="tgimages" src="images/zombotron2.png" alt="zombotron" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=zombotron2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=zombotron2';"> Zombotron 2</p></div>
+        <div class="games"><p><image class="tgimages" onmouseover="onhovervideo(this);" onmouseout="removevideo(this);" src="images/strikeforceheroes.png" alt="strike force heroes" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes';"> Strike Force Heroes</p></div>
+        <div class="games"><p><image class="tgimages" src="images/stickfigurebadminton2.png" alt="stick figure badminton 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=stickfigurebadminton2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=stickfigurebadminton2';"> Stick Figure Badminton 2</p></div>
+        <div class="games"><p><image class="tgimages" src="images/plazmaburst2.png" alt="Plazma Burst 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=plazmaburst2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=plazmaburst2';"> Plazma Burst 2</p></div>
+        <div class="games"><p><image class="tgimages" src="images/strikeforceheroes2.png" alt="Strike Force Heroes 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes2';"> Strike Force Heroes 2</p></div>
+        <div class="games"><p><image class="tgimages" src="images/raze2.png" alt="Raze 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=raze2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=raze2';"> Raze 2</p></div>
+        <div class="games"><p><image class="tgimages" src="images/ageofwar.png" alt="Age of War" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=ageofwar';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=ageofwar';"> Age of War</p></div>
+        <div class="games"><p><image class="tgimages" src="images/strikeforceheroes3.png" alt="Strike Force Heroes 3" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes3';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=strikeforceheroes3';"> Strike Force Heroes 3</p></div>
+        <div class="games"><p><image class="tgimages" src="images/worldbasketcup.png" alt="World Basket Cup" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=worldbasketcup';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=worldbasketcup';"> World Basket Cup</p></div>
+        <div class="games"><p><image class="tgimages" src="images/raze.png" alt="Raze" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=raze';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=raze';"> Raze</p></div>
+        <div class="games"><p><image class="tgimages" src="images/zombotron.png" alt="Raze" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=zombotron';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=zombotron';"> Zombotron</p></div>
+        <div class="games"><p><image class="tgimages" src="images/raze3.png" alt="Raze 3" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=raze3';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=raze3';"> Raze 3</p></div>
+        <div class="games"><p><image class="tgimages" src="images/knightmaretower.png" alt="Knightmare Tower" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=knightmaretower';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=knightmaretower';"> Knightmare Tower</p></div>
+        <div class="games"><p><image class="tgimages" src="images/jacksmith.png" alt="Jack Smith" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=jacksmith';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=jacksmith';"> Jack Smith</p></div>
+        <!--<div class="games"><p><image class="tgimages" src="images/armormayhem.png" alt="Armor Mayhem" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=armormayhem';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=armormayhem';"> Armor Mayhem</p></div>-->
+        <div class="games"><p><image class="tgimages" src="images/cyclomaniacs.png" alt="Cyclomaniacs" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=cyclomaniacs';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=cyclomaniacs';"> Cyclomaniacs</p></div>
+        <div class="games"><p><image class="tgimages" src="images/idlesword.png" alt="Idle Sword" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=idlesword';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=idlesword';"> Idle Sword</p></div>
+        <div class="games"><p><image class="tgimages" src="images/flight.png" alt="Flight" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=flight';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=flight';"> Flight</p></div>
+        <div class="games"><p><image class="tgimages" src="images/hauntthehouse.png" alt="Haunt The House" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=hauntthehouse';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=hauntthehouse';"> Haunt The House</p></div>
+        <div class="games"><p><image class="tgimages" src="images/cyclomaniacs2.png" alt="cyclomaniacs 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=cyclomaniacs2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=cyclomaniacs2';"> Cyclomaniacs 2</p></div>
+        <div class="games"><p><image class="tgimages" src="images/dolphinolympics2.png" alt="Dolphin Olympics 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=dolphinolympics2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=dolphinolympics2';"> Dolphin Olympics 2</p></div>
+        <div class="games"><p><image class="tgimages" src="images/armormayhemme.png" alt="Armor Mayhem Map Editor" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=armormayhemme';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=armormayhemme';"> Armor Mayhem Map Editor</p></div>
+        <div class="games"><p><image class="tgimages" src="images/ageofwar2.png" alt="Age of War 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=ageofwar2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=ageofwar2';"> Age of War 2</p></div>
+        <div class="games"><p><image class="tgimages" src="images/sydneyshark.png" alt="Sydney Shark" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=sydneyshark';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=sydneyshark';"> Sydney Shark</p></div>
+        <div class="games"><p><image class="tgimages" src="images/superstacker2.png" alt="Super Stacker 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=superstacker2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=superstacker2';"> Super Stacker 2</p></div>
+        <div class="games"><p><image class="tgimages" src="images/bubbletanks2.png" alt="Bubble Tanks 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=bubbletanks2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=bubbletanks2';"> Bubble Tanks 2</p></div>
+        <div class="games"><p><image class="tgimages" src="images/benjibirdicon.png" alt="Flappy Benji" style="width:65px;height:65px" onclick="window.location.href = 'games/benjibird.html';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'games/error.html';"> Benji Bird</p></div>
+        <div class="games"><p><image class="tgimages" src="images/benjiclicker.png" alt="Benji Clicker" style="width:65px;height:65px" onclick="window.location.href = 'games/benjiclicker.html';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'games/error.html';"> Benji Clicker</p></div>
+        <div class="games"><p><image class="tgimages" src="images/tbenjiicon.png" alt="T-Benji" style="width:65px;height:65px" onclick="window.location.href = 'games/T-Benji/index.html';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'games/error.html';"> T-Benji</p></div>
+        <div class="games"><p><image class="tgimages" src="images/Thumb_Fighter.png" alt="Thumb Fighter" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=thumbfighter';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=thumbfighter';"> Thumb Fighter</p></div>
+        <div class="games"><p><image class="tgimages" src="images/theuntitledgame2.png" alt="The Untitled Game" style="width:65px;height:65px" onclick="window.location.href = 'games/theuntitledgame/index.html';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'games/theuntitledgame/index.html';"> The Untitled Game</p></div>
+        <div class="games"><p><image class="tgimages" src="images/growtower.png" alt="Grow Tower" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=growtower';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=growtower';"> Grow Tower</p></div>
+        <div class="games"><p><image class="tgimages" src="images/learn2fly.png" alt="Learn To Fly" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=learntofly';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=learntofly';"> Learn To Fly</p></div>
+        <div class="games"><p><image class="tgimages" src="images/boxhead2.png" alt="Boxhead 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=boxhead2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=boxhead2';"> Boxhead 2</p></div>
+        <div class="games"><p><image class="tgimages" src="images/happywheels.png" alt="Happy Wheels" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=happywheels';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=happywheels';"> Happy Wheels</p></div>
+        <div class="games"><p><image class="tgimages" src="images/linerider.png" alt="Line Rider" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=linerider';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=linerider';"> Line Rider</p></div>
+        <div class="games"><p><image class="tgimages" src="images/electricman2.png" alt="ElectricMan 2" style="width:65px;height:65px" onclick="window.location.href = 'gameplayer.html?game=electricman2';" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = 'gameplayer.html?game=electricman2';"> Electric Man 2</p></div>
+
+      </div>
+    </div>
+    <div id="slidez" style="text-align:center;">
+      <h1>Slidez - by Frostburn-games </h1>
+      This is our first game,<br>
+      <image id="slidezlogo" src="images/slidez.png" alt="Slidez Logo" style="width:150px;height:150px"/>
+      <p>Slidez is a mobile game about evading obstacles, by jumping over them.</p>
+      <br>
+    <p><b>COMING SOON</b></p>
+      <p><image src="images/GooglePlayStore.png" alt="Google Play Store" style="width:50;height:100px;cursor: pointer" onclick="window.location.href = 'docs/slidez.apk';" target="_blank" /><image src="images/AppStore1comingsoon.png" alt="App Store" style="width:50;height:100px;cursor: pointer;" onclick="//window.location.href = 'http://www.download.com';" target="_blank" /></p>
+    </div>
+    <div id="donator">
+      <p class="donating"><b>Donators:</b></p>
+      <p class="donating">Jonas Koefoed Petersen 0.478 USD (3,0 DKK)</p>
+      <p class="donating">Lasse 0.237 USD (1,5 DKK)</p>
+      <p class="donating">Victor 0.237 USD (1,5 DKK)</p>
+      <p class="donating">Faustas 0.237 USD (1,5 DKK)</p>
+      <p class="donating">Mathias 0.237 USD (1,5 DKK)</p>
+    </div>
+    <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
+    	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report an error</a></b> website made by <a href="https://twitter.com/Kres0345">@Kres0345</a>, email: frostburn-games.com@gmail.com <i>Tip of the load:</i></p><p id="randomtip"></p>
+    </div>
+    <script type="text/javascript" src="js/randomtip.js"></script>
+    <!--<script type="text/javascript" src="js/searchbar.js"></script>-->
+    <script>
+    function toggleheader() {
+    var x = document.getElementById("header");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        document.cookie = "headerdisabled=false;";
+        //document.cookie = "headerdisabled=false; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
+        //var cookie = document.cookie;
+        console.log(document.cookie);
+    } else {
+        x.style.display = "none";
+        document.cookie = "headerdisabled=true;";
+        //var cookie = document.cookie;
+        console.log(document.cookie);
+    }
+    }
+    // cookie
+    var cookie = document.cookie.split(';');
+    var i = 0;
+    while (cookie.length >= i) {
+      if(cookie[i] == "headerdisabled=true"){
+        var x = document.getElementById("header");
+        x.style.display = "none";
+        console.log("Header disabled")
+      }
+      console.log(cookie[i])
+      i++;
+    }
+    //cookie
+    function returnm() {
+      window.location.href = "index.html";
+    }
+    function gamelist() {
+      window.location.href = "gamelist.html";
+    }
+    function popitup2() {
+    	console.log("Creating audio player window")
+    	newwindow2=window.open('','name','height=200,width=500');
+    	var tmp = newwindow2.document;
+    	tmp.write('<html><head><title>FrostBurn Audio player</title>');
+    	tmp.write('<link rel="stylesheet" href="js.css">');
+      tmp.write('<link rel="stylesheet" type="text/css" href="css/button.css">');
+    	tmp.write('</head><body><p style="font-family: sans-serif;">This is FrostBurn audio player.</p>');
+    	tmp.write('<p style="font-family: sans-serif;">You can minimize the window to keep focus on your game :-D or:</p>');
+      //tmp.write('<p style="font-family: sans-serif;"><a href="javascript:self.close()">Exit</a> the popup.</p>');
+      tmp.write('<input class="button" id="gamelistbutton" type="button" value="Exit" onclick="javascript:self.close();" />');
+    	tmp.write('<audio controls>');
+    	tmp.write('<source src="audio/StrikeForceHeroesOSTMainMenuTheme.mp3" type="audio/mpeg">');
+    	tmp.write('<source src="audio/OriginalGhostBustersThemeSong.mp3" type="audio/mpeg">');
+    	tmp.write('</audio>');
+    	tmp.write('</body></html>');
+    	tmp.close();
+    }
+    </script>
+  </body>
+</html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112744820-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112744820-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112744820-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112744820-2');
+</script>
+<!-- NOTE: Cookie banner here made with: https://cookieconsent.insites.com/ -->
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#252e39"
+    },
+    "button": {
+      "background": "#14a7d0"
+    }
+  },
+  "theme": "edgeless",
+  "position": "bottom-right",
+  "content": {
+    "message": 'I like cookies and so does our website that is why it uses them. "The intent is to provide players with a sense of pride and accomplishment by using cookies."',
+    "link": "Learn more about cookies",
+    "href": "http://allrecipes.com/recipes/362/desserts/cookies/"
+  }
+})});
+</script>
+<!-- NOTE: Cookie banner ends here -->
+
+<!--
+/*
+function onhovervideo(x) {
+  if (x.innerHTML.indexOf("<iframe width") >= 0){
+    x.innerHTML = x.innerHTML, '<iframe width="560" height="315" src="https://www.youtube.com/embed/PPB5SBtQnDE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
+  }
+}
+function removevideo(x) {
+
+}*/
+function rowview() {
+  //console.log($('html').text());
+  var documenthtml01 = document.documentElement.innerHTML;
+  console.log(documenthtml01);
+  document.write(documenthtml01+'\n<link rel="stylesheet" type="text/css" href="css/rowview.css">');
+  //console.log($("games").css("width"););
+}
+function columnview() {
+  var documenthtml01 = document.documentElement.innerHTML;
+  console.log(documenthtml01);
+  document.write(documenthtml01+'\n<link rel="stylesheet" type="text/css" href="css/columnview.css">');
+}*/
+
+function basic() {
+  //console.log($('html').text());
+  var documenthtml = document.body.innerHTML;
+  //var documenttext = document.body.innertext;
+  console.log(documenthtml);
+  //console.log(documenttext);
+  document.write(documenthtml+'\n<link rel="stylesheet" type="text/css" href="css/rowview.css">');
+  //console.log($("games").css("width"););
+}
+-->
+
+<!--
+Secret messeage:
+01101000 01100101 01101100 01101100 01101111 00100000 01101000 01101111 01110111 00100000 01100001 01110010 01100101 00100000 01111001 01101111 01110101 01110010 00100000 01100100 01100001 01111001 00111111
+-->

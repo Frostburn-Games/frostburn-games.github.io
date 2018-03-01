@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="css/account.css">
+<link rel="stylesheet" type="text/css" href="css/headermenu.css">
+<link rel="stylesheet" type="text/css" href="css/button.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<html>
+  <link rel="icon" href="logoVersion4.png" type="image/x-icon"/>
+  <title>FrostBurn Games</title>
+  <head>
+    <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
+      <input type="image" src="logoVersion4.png" onclick="returnm();" style="width:60px;height:60px;float: left" />
+      <p style=""><b>Welcome to FrostBurn Games</b></p>
+      <ul style="font-family: sans-serif;">
+        <li><a href="index.html">Frontpage</a></li>
+        <!-- <li><a href="#surveyhref"><i>Survey</i></a></li> -->
+        <li><a href="slidez.html">Slidez</a></li>
+        <li><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report a bug</a></li>
+        <!-- <li><a href="account.html">Local-settings</a></li> -->
+        <!-- <li><a href="gamelist.html">Gamelist</a></li> -->
+      </ul>
+    </div>
+    <script> //Quick runs
+      var cookies = document.cookie;
+      if(cookies == "headerdisabled=true"){
+        var x = document.getElementById("header");
+        x.style.display = "none";
+        console.log("Header disabled")
+      }
+    </script>
+    <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
+    	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Request a game?</a></b>, <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new">Report an error</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/projects/1">Follow development</a></b> website made by kres0345, <i>Tip of the load:</i></p><p id="randomtip"></p>
+    </div>
+    <script type="text/javascript" src="js/randomtip.js"></script>
+    <h1 id="title">Cookie info and more</h1>
+    <input style="text-align:center;" class="button" id="return to menu" type="button" value="Return to Menu" onclick="returnm();" />
+    <div id="info">
+      <p><b>Overview:</b></p>
+      <p><a href="#settings">Settings</a></p>
+      <p><a href="#Howitworks">How local accounts work</a></p>
+      <p><a href="#cookies">Did you come here for the cookies?</a></p>
+      <a name="Howitworks"><b>How this works:</b></a>
+      <p>This is just the cookie configurations.</p>
+    </div>
+    <div id="cookies">
+      <a style="font-size:20px;"name="cookies"><b>Cookies:</b></a>
+      <p>The only cookies the website generates is the one's saving the state of the Header</p>
+      <p>You can delete your cookies in the <a href="#settings">settings</a>.</p>
+      <p>You can also view your cookies in the <a href="#settings">settings</a>.</p>
+    </div>
+    <div id="settings">
+      <a style="font-size:20px;"name="settings"><b>Settings:</b></a>
+      <p>Your options are:</p>
+      <input class="button" type="button" value="Toggle header" onclick="toggleheader();"/>
+      <input class="button" type="button" onclick="deleteAllCookies();" value="Delete cookies"/>
+      <input class="button" type="button" value="Show cookies" onclick="var cookie = document.cookie;alert(`Your cookies are ${cookie}`);"/>
+    </div>
+      <!--
+      <a style="font-size:20px;"name="signup"><b>Signup:</b></a>
+      <div id="signup">
+
+        <form action="login.php" method="get">
+          <div class="containerlogin">
+            <p>Register</p>
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input type="checkbox" checked="checked"> Remember me
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    -->
+  </head>
+</html>
+
+<script>
+  function deleteAllCookies() {
+  var cookies = document.cookie.split(";");
+  for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i];
+      var eqPos = cookie.indexOf("=");
+      var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+  console.log("Deleted all cookies")
+  alert("Cookies deleted(supposedly)");
+  console.log(document.cookie)
+  }
+  }
+  function returnm() {
+    window.location.href = "index.html";
+  }
+  function toggleheader() {
+  var x = document.getElementById("header");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+      document.cookie = "headerdisabled=false;";
+      //document.cookie = "headerdisabled=false; expires=Thu, 18 Dec 2018 12:00:00 UTC; path=/";
+      //var cookie = document.cookie;
+      console.log(document.cookie);
+  } else {
+      x.style.display = "none";
+      document.cookie = "headerdisabled=true;";
+      //var cookie = document.cookie;
+      console.log(document.cookie);
+  }
+  }
+</script>
