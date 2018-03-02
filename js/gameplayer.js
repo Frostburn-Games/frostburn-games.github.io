@@ -279,6 +279,14 @@ if(cp=='game=electricman2'){
 	document.getElementById('tabtitle').innerHTML = "ElectricMan 2 - FrostBurn Games"
   var runcorrect = true
 }
+if(cp=='game=swords_and_sandals_gladiator'){
+  console.log("Loading Swords and Sandals")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="525" data="https://cdn.rawgit.com/kres0345/swfgames/a8abc3e1/swords_and_sandals_gladiator.swf"></object>'
+  document.getElementById('description').innerHTML = "<p><b>This game is made by An Awesome Person.</b> Description.</p>"
+  document.getElementById('title').innerHTML = '<h1>Swords and Sandals</h1>'
+	document.getElementById('tabtitle').innerHTML = "Swords and Sandals - FrostBurn Games"
+  var runcorrect = true
+}
 if(cp=='game=template'){
   console.log("Loading Template")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/dolphin-olympics-2-2019.swf"></object>'
