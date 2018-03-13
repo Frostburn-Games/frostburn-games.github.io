@@ -66,6 +66,24 @@ body {
   background-color: #acb3bf;
 
 }
+#popup{
+  display: none;
+  position: fixed;
+  border: 10px;
+  border-color: red;
+  border-radius: 8px;
+  background-color: gray;
+  width: 50%;
+  height: 50%;
+  left: 25%;
+  top: 25%;
+  text-align: center;
+}
+#closebutton{
+  position: absolute;
+  left: 95%;
+  top: 1%;
+}
 /*
 #gameplayer {
   text-align: center;
@@ -117,6 +135,14 @@ body {
   <input class="button" id="closefullscreen" type="button" value="Exit Fullscreen" onclick="closefullscreen();" />
   <input class="button" id="clearbackground" type="button" value="Clear BG" onclick="clearbackground();" />
   </div>
+
+<div id="popup">
+  <input type="button" id="closebutton" class="button" value="X" onclick="closepop();">
+  <p>Open frostclient</p>
+  <input type="button" class="button" value="Open" onclick="openclient();">
+  <p>Download frostclient</p>
+  <input type="button" class="button" value="Download" onclick="window.open('frostclient.html')">
+</div>
   <!--<object><param /></object>-->
   <div id="gameplayer"></div> <!-- This is the function that gets changed with url parameter -->
 
@@ -126,7 +152,7 @@ body {
     <input class="button" id="return to gamelist" type="button" value="Return to Gamelist" onclick="returngl();" />
     <input class="button" id="toggle header" type="button" value="Toggle Header" onclick="toggleheader();" />
     <input class="button" id="fullscreen" type="button" value="Full-Screen" onclick="fullscreen();" />
-    <!--<input class="button" id="gameclient" type="button" value="Open in client" onclick="openclient();" />-->
+    <input class="button" id="gameclient" type="button" value="Open in client" onclick="openpopup();" />
     <div id=description></div>
 
     <!-- frostburn-games.disqus.com comment section Start -->
@@ -236,9 +262,11 @@ body {
     var res = url1.split("?");
     var cp = res[1];
     function openclient(){
-      window.open("frostclient:"+cp)
+      window.open("frostclient:"+cp.replace("game=",""))
     }
-
+    function openpopup(){
+      document.getElementById("popup").style.display = "block";
+    }
   </script>
   <script src="js/gameplayer.js"></script>
   <script> //Flash detection script by dcicale: https://gist.github.com/dciccale/1116643
@@ -260,3 +288,8 @@ body {
 Secret messeage:
 01101000 01100101 01101100 01101100 01101111 00100000 01101000 01101111 01110111 00100000 01100001 01110010 01100101 00100000 01111001 01101111 01110101 01110010 00100000 01100100 01100001 01111001 00111111
 -->
+<script>
+function closepop(){
+  document.getElementById("popup").style.display = "none";
+}
+</script>
