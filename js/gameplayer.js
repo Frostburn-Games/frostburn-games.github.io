@@ -72,7 +72,7 @@ if(cp=='game=strikeforceheroesnotdoppler'){
 }
 if(cp=='game=knightmaretower'){
 	console.log("Loading Knightmare Tower")
-	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/knightmare-tower-13831.swf"></object>'
+	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/6748a739/knightmare-tower.swf"></object>'
 	document.getElementById('description').innerHTML = "<p><b>This game is made by JuicyBeast.</b> Don't know this game.</p>"
 	document.getElementById('title').innerHTML = '<h1>Knightmare Tower</h1>'
 	document.getElementById('tabtitle').innerHTML = "Knightmare Tower - FrostBurn Games"
@@ -88,7 +88,7 @@ if(cp=='game=zombotron'){
 }
 if(cp=='game=zombotron2'){
   console.log("Loading Zombotron 2")//old res 650x480
-  document.getElementById('gameplayer').innerHTML = '<object width="640" height="480" data="https://cdn.rawgit.com/kres0345/swfgames/86bd817f/zombotron-2-13457.swf"></object>'
+  document.getElementById('gameplayer').innerHTML = '<object width="640" height="480" data="https://cdn.rawgit.com/kres0345/swfgames/6748a739/zombotron-2.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by AntKarlov.</b> A game requested by a friend.</p>"
   document.getElementById('title').innerHTML = '<h1>Zombotron 2</h1>'
 	document.getElementById('tabtitle').innerHTML = "Zombotron 2 - FrostBurn Games"
@@ -201,7 +201,7 @@ if(cp=='game=ageofwar2'){
 }
 if(cp=='game=sydneyshark'){
   console.log("Loading Sydney Shark")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/86bd817f/sydney-shark-5734.swf"></object>'
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/6748a739/sydney-shark.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by Wiesi.</b> A game requested.</p>"
   document.getElementById('title').innerHTML = '<h1>Sydney Shark</h1>'
 	document.getElementById('tabtitle').innerHTML = "Sydney Shark - FrostBurn Games"
@@ -209,7 +209,7 @@ if(cp=='game=sydneyshark'){
 }
 if(cp=='game=superstacker2'){
   console.log("Loading Super Stacker")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/85dea0a9/super-stacker-2-3141.swf"></object>'
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/6748a739/super-stacker-2.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by inXile_Ent.</b> This is about stacking selected amount of block without them tilting within a certain amount of time and if they tilt you lose.</p>"
   document.getElementById('title').innerHTML = '<h1>Super Stacker 2</h1>'
 	document.getElementById('tabtitle').innerHTML = "Super Stacker 2 - FrostBurn Games"
@@ -217,7 +217,7 @@ if(cp=='game=superstacker2'){
 }//bubble-tanks-2-1920.swf
 if(cp=='game=bubbletanks2'){
   console.log("Loading Bubble Tanks 2")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/70251ce7/bubble-tanks-2-1920.swf"></object>'
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/6748a739/bubble-tanks-2.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by HeroInteractive.</b> Description.</p>"
   document.getElementById('title').innerHTML = '<h1>Bubble Tanks 2</h1>'
 	document.getElementById('tabtitle').innerHTML = "Bubble Tanks 2 - FrostBurn Games"
@@ -233,7 +233,7 @@ if(cp=='game=growtower'){
 }
 if(cp=='game=learntofly'){
   console.log("Loading Learn To Fly")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/deb93996/learn-to-fly-3789.swf"></object>'
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/6748a739/learn-to-fly.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by lightbringer777.</b> An amazing game about making a penguin fly.</p>"
   document.getElementById('title').innerHTML = '<h1>Learn To Fly</h1>'
 	document.getElementById('tabtitle').innerHTML = "Learn To Fly - FrostBurn Games"
