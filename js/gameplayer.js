@@ -40,7 +40,7 @@ if(cp=='game=stickfigurebadminton3'){
 }
 if(cp=='game=raze'){
 	console.log("Loading Raze")
-	document.getElementById('gameplayer').innerHTML = '<object width="700" height="600" data="games/swf/raze-5395.swf"></object>'
+	document.getElementById('gameplayer').innerHTML = '<object width="700" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/2042c799/raze.swf"></object>'
 	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> This is also a childhood forming game.</p>'
 	document.getElementById('title').innerHTML = '<h1>Raze</h1>'
 	document.getElementById('tabtitle').innerHTML = "Strike Force Heroes - FrostBurn Games"
@@ -48,7 +48,7 @@ if(cp=='game=raze'){
 }
 if(cp=='game=raze2'){
 	console.log("Loading Raze 2")
-	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/86bd817f/raze-2-12275.swf"></object>'
+	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/2042c799/raze-2.swf"></object>'
 	document.getElementById('description').innerHTML = '<p><b>This game is made by JuiceTin.</b> Raze 2 is an even better game than the first(in my opinion).</p>'
 	document.getElementById('title').innerHTML = '<h1>Raze 2</h1>'
 	document.getElementById('tabtitle').innerHTML = "Raze 2 - FrostBurn Games"
@@ -56,7 +56,7 @@ if(cp=='game=raze2'){
 }
 if(cp=='game=raze3'){
 	console.log("Loading Raze 3")
-	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/3f80361f/raze-3-15979.swf"></object>'
+	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/2042c799/raze-3.swf"></object>'
 	document.getElementById('description').innerHTML = "<p><b>This game is made by JuiceTin.</b> Raze 3 is the last game in the series so it isn't so great(in my opinion).</p>"
 	document.getElementById('title').innerHTML = '<h1>Raze 3</h1>'
 	document.getElementById('tabtitle').innerHTML = "Raze 3 - FrostBurn Games"
@@ -112,7 +112,7 @@ if(cp=='game=hauntthehouse'){
 }
 if(cp=='game=ageofwar'){
   console.log("Loading Age of War")
-  document.getElementById('gameplayer').innerHTML = '<object width="800" height="565" data="games/swf/age-of-war-616.swf"></object>'
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="565" data="https://cdn.rawgit.com/kres0345/swfgames/2042c799/age-of-war.swf"></object>'
   document.getElementById('description').innerHTML = "<p><b>This game is made by louissi.</b> This game is about defending your base while attacking the enemy base and you slowly advance in history.</p>"
   document.getElementById('title').innerHTML = '<h1>Age of War</h1>'
 	document.getElementById('tabtitle').innerHTML = "Age of War - FrostBurn Games"
