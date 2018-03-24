@@ -1,6 +1,10 @@
 p, h1, a{
   font-family: sans-serif;
+  color: white;
 }
 #description{
   text-align: center;
+}
+body{
+  background-color: #277979;
 }
