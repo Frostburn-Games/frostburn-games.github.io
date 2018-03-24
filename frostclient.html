@@ -1,41 +1,14 @@
 <!DOCTYPE html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="description" content="The FrostClient is program that allows you to download and play FrostBurn-Games, games locally." />
   <link rel="stylesheet" type="text/css" href="css/button.css">
   <link rel="stylesheet" type="text/css" href="css/headermenu.css">
   <link rel="stylesheet" type="text/css" href="css/frostclient.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
   <title>FrostClient - Frostburn-Games</title>
 </head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112744820-4"></script>
-<script src="js/gtag.js"></script>
-<body>
-  <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
-    <input type="image" src="logoVersion4.png" onclick='window.location.href = "index.html";' style="width:60px;height:60px;float:left" />
-    <p style=""><b>Welcome to FrostBurn Games</b></p>
-    <ul style="font-family: sans-serif;">
-      <li><a href="index.html">Frontpage</a></li>
-      <!-- <li><a href="#surveyhref"><i>Survey</i></a></li> -->
-      <li><a href="slidez.html">Slidez</a></li>
-      <li><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report a bug</a></li>
-      <li><a class="active" href="FrostClient.html">FrostClient</a></li>
-      <!-- <li><a href="account.html">Local-settings</a></li> -->
-      <!-- <li><a href="gamelist.html">Gamelist</a></li> -->
-    </ul>
-  </div>
-<h1 style="text-align: center;color:inherit;">FrostClient</h1>
-<div id="description">
-  <p>Why use FrostClient?</p>
-  <p>So you can play games offline</p>
-</div>
-<!-- 700+ lines of code -->
-
-  <div id="footer"> <!-- NOTE !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
-    <p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report an error</a></b> website made by <a href="https://twitter.com/Kres0345">@Kres0345</a>, <i>Tip of the load:</i></p><p id="randomtip"></p>
-  </div>
-  <script type="text/javascript" src="js/randomtip.js"></script>
-
-</body>
 <script>
 var cookie = document.cookie.split(';');
 var i = 0;
@@ -49,3 +22,41 @@ while (cookie.length >= i) {
   i++;
 }
 </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112744820-4"></script>
+<script src="js/gtag.js"></script>
+<body class="content">
+  <div class="sticky" id="header"> <!-- NOTE !!!HEADER HERE!!! (I keep forgetting where I place it) -->
+    <input type="image" src="logoVersion4.png" onclick='window.location.href = "index.html";' style="width:60px;height:60px;float:left" />
+    <p style=""><b>Welcome to FrostBurn Games</b></p>
+    <ul style="font-family: sans-serif;">
+      <li><a href="index.html">Frontpage</a></li>
+      <!-- <li><a href="#surveyhref"><i>Survey</i></a></li> -->
+      <li><a href="slidez.html">Slidez</a></li>
+      <li><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report a bug</a></li>
+      <li><a class="active" href="FrostClient.html">FrostClient</a></li>
+      <!-- <li><a href="account.html">Local-settings</a></li> -->
+      <!-- <li><a href="gamelist.html">Gamelist</a></li> -->
+    </ul>
+  </div>
+  <br>
+  <input class="button" id="toggleheader" type="button" value="Toggle Header" onclick="toggleheader();" />
+  <input class="button" id="back2menu" type="button" value="Back To Frontpage" onclick="window.location.href = 'index.html';" />
+  <br><br>
+  <div id="frostclient">
+    <h1 style="text-align: center;color:inherit;">FrostClient</h1>
+    <div id="description">
+      <p>Why use FrostClient?</p>
+      <p>So you can play games offline</p>
+    </div>
+<!-- 700+ lines of code -->
+</div>
+<div id="frostclientscreenshots">
+<p></p>
+</div>
+  <div id="footer"> <!-- NOTE !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
+    <p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report an error</a></b> website made by <a href="https://twitter.com/Kres0345">@Kres0345</a>, <i>Tip of the load:</i></p><p id="randomtip"></p>
+  </div>
+  <script type="text/javascript" src="js/randomtip.js"></script>
+
+</body>

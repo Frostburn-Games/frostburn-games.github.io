@@ -8,3 +8,19 @@ p, h1, a{
 body{
   background-color: #277979;
 }
+#frostclient {
+  border:5px solid blue;
+  border-radius: 6px;
+  background-color: white; /* NOTE: bgcolor */
+}
+#frostclientscreenshots {
+  border:5px solid green;
+  border-radius: 6px;
+  background-color: white; /* NOTE: bgcolor */
+}
+.content {
+  max-width: 1200px;
+  /background: white;
+  padding: 10px;
+  margin: auto;
+}
