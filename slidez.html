@@ -34,6 +34,12 @@ h1 {
   border-radius: 6px;
   background-color: white; /* NOTE: bgcolor */
 }
+#slidezscreenshots {
+  /* border:5px solid #43becc; */
+  border:5px solid #31d1e2;
+  border-radius: 6px;
+  background-color: white; /* NOTE: bgcolor */
+}
 .games {
   float: left;
   width: 33.33%;
@@ -43,16 +49,17 @@ h1 {
 * {
     box-sizing: border-box;
 }
+/*
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-@media (max-width:600px) { /* Resizes the rows depending on screen size(mobile support) */
+@media (max-width:600px) {
     .games {
         width: 100%;
     }
-}
+}*/
 
 /* Side blank bars */
 body {
@@ -146,14 +153,19 @@ body {
       <h1>Slidez</h1>
       <p>This game is about timing your jumps to prevent stopping your flow,
       and die. <br>You can collect powerups and coins to buy skins.<br></p>
-      <image id="slidezlogo" src="images/slidez.png" alt="Slidez Logo" style="width:150px;height:150px"/>
+      <image id="slidezlogo" src="images/slidez.png" alt="Slidez Logo" style="width:170px;height:170px"/>
       <!--<p>Slidez is a mobile game about evading obstacles, by jumping over them. You can see out first advertisement here.</p>-->
       <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/hXqxDc-lqXk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
 
       <br>
-    <p><b>COMING SOON</b></p>
+    <p><b>Available for android</b></p>
       <p><image src="images/GooglePlayStore.png" alt="Google Play Store" style="width:50;height:100px;cursor: pointer" onclick="window.location.href = 'https://github.com/Frostburn-Games/frostburn-games.github.io/releases/download/v53/slidez.apk';" target="_blank" /><image src="images/AppStore1comingsoon.png" alt="App Store" style="width:50;height:100px;cursor: pointer;" onclick="//window.location.href = 'http://www.download.com';" /></p>
+
     </div>
+    <div id="slidezscreenshots" style="text-align:center;">
+      <h1>Screenshots</h1>
+    </div>
+
     <div id="footer"> <!-- !!!FOOTER HERE!!! (I keep forgetting where I place it) -->
     	<p><b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Request a game?</a></b> or <b><a href="https://github.com/kres0345/FrostBurn-Games/issues/new" target="_blank">Report an error</a></b> website made by <a href="https://twitter.com/Kres0345" target="_blank">@Kres0345</a>, <i>Tip of the load:</i></p><p id="randomtip"></p>
     </div>
@@ -200,19 +212,18 @@ body {
     	tmp.write('<html><head><title>FrostBurn Audio player</title>');
     	tmp.write('<link rel="stylesheet" href="js.css">');
     	tmp.write('</head><body><p>This is FrostBurn audio player.</p>');
-    	tmp.write('<p>You can minimize the window to keep focus on your game :-D or:</p>')
+    	tmp.write('<p>You can minimize the window to keep focus on your game :-D or:</p>');
     	tmp.write('<p><a href="javascript:self.close()">Close</a> the popup.</p>');
     	tmp.write('<audio controls>');
-    	tmp.write('<source src="audio/StrikeForceHeroesOSTMainMenuTheme.mp3" type="audio/mpeg">')
-    	tmp.write('<source src="audio/OriginalGhostBustersThemeSong.mp3" type="audio/mpeg">')
-    	tmp.write('</audio>')
+    	tmp.write('<source src="audio/StrikeForceHeroesOSTMainMenuTheme.mp3" type="audio/mpeg">');
+    	tmp.write('<source src="audio/OriginalGhostBustersThemeSong.mp3" type="audio/mpeg">');
+    	tmp.write('</audio>');
     	tmp.write('</body></html>');
     	tmp.close();
     }
     </script>
   </body>
 </html>
-
 <!--
 Secret messeage:
 01101000 01100101 01101100 01101100 01101111 00100000 01101000 01101111 01110111 00100000 01100001 01110010 01100101 00100000 01111001 01101111 01110101 01110010 00100000 01100100 01100001 01111001 00111111
