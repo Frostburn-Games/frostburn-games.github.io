@@ -256,10 +256,10 @@ body {
     var cp = res[1];
     function openclient(){
       var titlename2 = $('#title').text();
+      var titlename = document.getElementById('title').innerHTML.replace(/ /g,"-");
       console.log(titlename2);
       console.log(titlename);
-      var titlename = document.getElementById('title').innerHTML.replace(/ /g,"-");
-      window.open("frostclient:"+titlename);
+      window.open("frostclient:"+titlename2);
       //window.open("frostclient:"+cp.replace("game=",""))
     }
     function openpopup(){
