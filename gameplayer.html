@@ -131,7 +131,7 @@ body {
 
 <div id="popup">
   <input type="button" id="closebutton" class="button popuptext" value="X" onclick="closepop();">
-  <p class="popuptext">Open frostclient</p>
+  <p class="popuptext">FrostClient</p>
   <input type="button" class="button" value="Open" onclick="openclient();">
   <p class="popuptext">Download FrostClient</p>
   <input type="button" class="button popuptext" value="Download" onclick="window.open('frostclient.html')">
@@ -255,7 +255,9 @@ body {
     var res = url1.split("?");
     var cp = res[1];
     function openclient(){
-      window.open("frostclient:"+cp.replace("game=",""))
+      var titlename = document.getElementById('title').innerHTML.replace(" ","-");
+      window.open("frostclient:"+titlename);
+      //window.open("frostclient:"+cp.replace("game=",""))
     }
     function openpopup(){
       document.getElementById("popup").style.display = "block";

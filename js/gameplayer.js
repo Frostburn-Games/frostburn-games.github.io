@@ -234,7 +234,11 @@ if(cp=='game=growtower'){
 if(cp=='game=learntofly'){
   console.log("Loading Learn To Fly")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/6748a739/learn-to-fly.swf"></object>'
-  document.getElementById('description').innerHTML = "<p><b>This game is made by lightbringer777.</b> An amazing game about making a penguin fly.</p>"
+  document.getElementById('description').innerHTML = `<p><b>This game is made by lightbringer777.</b> One Penguin Takes it personally when he is surfing the web and stumbles upon a web site telling him that he cant fly, after that he sets his mind to research and practice flying until he can prove the world that he can.. Learn to Fly!
+
+Tips:
+Glider: Each Glider has a "redzone", a speed above which your speed drops fast.  Avoid Gliding for long momoents in the redzone to get the extra distance you need!
+.</p>`
   document.getElementById('title').innerHTML = '<h1>Learn To Fly</h1>'
 	document.getElementById('tabtitle').innerHTML = "Learn To Fly - FrostBurn Games"
   var runcorrect = true
