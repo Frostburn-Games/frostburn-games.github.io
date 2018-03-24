@@ -255,11 +255,11 @@ body {
     var res = url1.split("?");
     var cp = res[1];
     function openclient(){
-      var titlename2 = $('#title').text();
-      var titlename = document.getElementById('title').innerHTML.replace(/ /g,"-");
-      console.log(titlename2);
-      console.log(titlename);
-      window.open("frostclient:"+titlename2);
+      var titlename = $('#title').text();
+      //var titlename2 = document.getElementById('title').innerHTML.replace(/ /g,"-");
+      console.log("Launching FrostClient with "+titlename);
+      //console.log(titlename2);
+      window.open("frostclient:"+titlename.replace(/ /g, "-"));
       //window.open("frostclient:"+cp.replace("game=",""))
     }
     function openpopup(){
