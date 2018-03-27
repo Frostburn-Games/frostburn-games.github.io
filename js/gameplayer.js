@@ -291,6 +291,24 @@ if(cp=='game=swords_and_sandals_gladiator'){
 	document.getElementById('tabtitle').innerHTML = "Swords and Sandals - FrostBurn Games"
   var runcorrect = true
 }
+if(cp=='game=super-smash-flash-2'){
+  console.log("Loading Super Smash Flash 2")
+  document.getElementById('gameplayer').innerHTML = '<object width="800" height="450" data="https://cdn.rawgit.com/kres0345/swfgames/1f9deea7/super-smash-flash-2.swf"></object>'
+  document.getElementById('description').innerHTML = `<p><b>This game is made by McLeodGaming.</b><br> In constant development since 2010, SSF2 is the improved online version of the fighting game "Super Smash Bros Brawl" on the Nintendo console. <br>Play as your favorite heroes (Mario, Link, Pikachu, Sonic, Zelda, Ichigo, Naruto, Goku, ...) and compete against up to 4 players or against the computer. <br>Developed by McLeod Gaming, here is the full version of Super Smash Flash 2 v0.9 playable in full screen.
+<br><br>
+	<b>Game Controls:</b><br>
+	Space: Select<br>
+	Back: Pause<br>
+	WASD: Move<br>
+	U: Grab<br>
+	I: Shield<br>
+	O: Attack 1<br>
+	P: Attack 2<br>
+	1: Taunt.</p>`
+  document.getElementById('title').innerHTML = '<h1>Super Smash Flash 2</h1>'
+	document.getElementById('tabtitle').innerHTML = "Super Smash Flash 2 - FrostBurn Games"
+  var runcorrect = true
+}
 if(cp=='game=template'){
   console.log("Loading Template")
   document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="games/swf/dolphin-olympics-2-2019.swf"></object>'
