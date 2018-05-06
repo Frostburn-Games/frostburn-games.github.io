@@ -107,3 +107,12 @@ input[type="text"]{
 input[type="text"]:focus{
   width: 100%;
 }
+
+#cryptomessage{
+  border:5px solid blue;
+  border-radius: 6px;
+  padding: 10px;
+  padding-top: 1px;
+  text-align: center;
+  background-color: white; /* NOTE: bgcolor */
+}
