@@ -1,3 +1,5 @@
+var AmountToLoadAtATime = 15;
+
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -46,8 +48,50 @@ gameElements = [
   '<div class="games"><p><image class="tgimages" src="images/swordsandsandals.png" alt="Swords and Sandals" style="width:65px;height:65px" onclick="window.location.href = &quot;gameplayer.html?game=swords_and_sandals_gladiator&quot;;" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = &quot;gameplayer.html?game=swords_and_sandals_gladiator&quot;;"> Swords and Sandals</p></div>'
 ]
 shuffleArray(gameElements);
+var LoadMoreBtn = '<input type="button" id="loadmore" class="button" value="Load More Games" onclick="LoadMoreGames()">';
+var remainingElements = gameElements;
 var i = 0;
+
+/* //Loads some games but dublicates in some cases.
 while (i < gameElements.length) {
   document.getElementsByClassName('row')[0].innerHTML += gameElements[i];
+  remainingElements.shift();
+  console.log(i);
+  if(i > AmountToLoadAtATime){
+    console.log("Exceeded 10");
+    document.getElementsByClassName('row')[0].innerHTML += LoadMoreBtn;
+    break;
+  }
+  i+=1;
+}*/
+while (i < gameElements.length) { //Randomizes and loads all games at once.
+  document.getElementsByClassName('row')[0].innerHTML += gameElements[i];
+  //console.log(i);
   i+=1;
 }
+/*
+while (i < remainingElements.length) { //Randomizes and loads some games at once, loads more games when butten pressed.
+  document.getElementsByClassName('row')[0].innerHTML += remainingElements[0];
+  remainingElements.shift();
+  if(i > AmountToLoadAtATime){
+    document.getElementsByClassName('row')[0].innerHTML += LoadMoreBtn;
+    break;
+  }
+  i+=1;
+}*/
+
+/*
+function LoadMoreGames(){
+  i = 0;
+  document.getElementById("loadmore").parentNode.removeChild(document.getElementById("loadmore"));
+  while (0 < remainingElements.length) {
+    document.getElementsByClassName('row')[0].innerHTML += remainingElements[0];
+    remainingElements.shift();
+    if(i > AmountToLoadAtATime){
+      document.getElementsByClassName('row')[0].innerHTML += LoadMoreBtn;
+      break;
+    }
+    i+=1;
+  }
+}
+*/
