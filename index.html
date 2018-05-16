@@ -65,8 +65,7 @@ if (screen.width <= 600) {
     <br>
     <input class="button" id="toggleheader" type="button" value="Toggle Header" onclick="toggleheader();" />
     <input id="audioplayerbtn" class="button" type="button" value="Start audio player" onclick="popitup2();" />
-    <p id="cryptomessage">You can now support FrostBurn-Games by mining cryptocurrency! :-D via your browser.<br>You control how much power you put into mining the more CPU power you use, the more we earn.<br>But it is up to you, this is the only alternative to advertisements,<br><br>if you want us to keep the website ad-free then this is how. You can just open it in one tab, while playing a game in another.<br>If the miningsite doesnt load, then disable your adblocker.<br>Link: <a target="_blank" href="https://authedmine.com/media/miner.html?key=i1Hsqhpi8zt4FEi5C5imhE5XXyf5SmL0">https://authedmine.com/media/miner.html?key=i1Hsqhpi8zt4FEi5C5imhE5XXyf5SmL0</a><br><br><br>The recommended threads are 3. Or 2 if you are playing a game or using your computer for something else.<br>4 threads if you want to be a fantastic supporter and you arent planning on using your computer while mining.</p>
-	<!--Banner--><!--<br>
+    <!--Banner--><!--<br>
 	<script type="text/javascript" src="//ylx-1.com/bnr.php?section=General&pub=943371&format=300x250&ga=g"></script>
 	<noscript><a href="https://yllix.com/publishers/943371" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/300x250.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" /></a></noscript>
 --><!--<script type="text/javascript" src="//cdn.popcash.net/pop.js"></script>-->
@@ -76,6 +75,12 @@ if (screen.width <= 600) {
     <!--<a style="font-family: sans-serif;" class="button" href="http://ssl.FrostBurn-Games.com" target="_top">Enable SSL(Gives best mobile experince)</a>-->
 
     <!--<input type="text" name="search" id="searchbar" placeholder="A really great game...">-->
+    <div id="recentgames" style="display:none">
+      <div class="rowrecent">
+      <p>Recent games</p>
+      </div>
+    </div>
+    <br><br>
     <div id="topgames">
       <p style="font-size:120%;"><b>Games:</b></p>
       <!--<p>Don't spam the "Row view" button, as that is is in beta currently and will slow it down.</p>-->
@@ -125,7 +130,10 @@ if (screen.width <= 600) {
 
       </div>
     </div>
+    <p id="cryptomessage">You can now support FrostBurn-Games by mining cryptocurrency! :-D via your browser.<br>You control how much power you put into mining the more CPU power you use, the more we earn.<br>But it is up to you, this is the only alternative to advertisements,<br><br>if you want us to keep the website ad-free then this is how. You can just open it in one tab, while playing a game in another.<br>If the miningsite doesnt load, then disable your adblocker.<br>Link: <a target="_blank" href="https://authedmine.com/media/miner.html?key=i1Hsqhpi8zt4FEi5C5imhE5XXyf5SmL0">https://authedmine.com/media/miner.html?key=i1Hsqhpi8zt4FEi5C5imhE5XXyf5SmL0</a><br><br><br>The recommended threads are 3. Or 2 if you are playing a game or using your computer for something else.<br>4 threads if you want to be a fantastic supporter and you arent planning on using your computer while mining.</p>
+
     <script src="js/randomize-games.js"></script>
+    <script src="js/recent-games.js"></script>
     <div id="slidez" style="text-align:center;">
       <h1>Slidez</h1>
       This is our first game,<br>
