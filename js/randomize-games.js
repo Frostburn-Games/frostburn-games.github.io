@@ -8,7 +8,7 @@ function shuffleArray(array) {
         array[j] = temp;
     }
 }
-gameElements = [
+const gameElements = [
   '<div class="games"><p><image class="tgimages" src="images/zombotron2.png" alt="zombotron" style="width:65px;height:65px" onclick="window.location.href = &quot;gameplayer.html?game=zombotron2&quot;;" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = &quot;gameplayer.html?game=zombotron2&quot;;"> Zombotron 2</p></div>',
   '<div class="games"><p><image class="tgimages" src="images/strikeforceheroes.png" alt="strike force heroes" style="width:65px;height:65px" onclick="window.location.href = &quot;gameplayer.html?game=strikeforceheroes&quot;;" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = &quot;gameplayer.html?game=strikeforceheroes&quot;;"> Strike Force Heroes</p></div>',
   '<div class="games"><p><image class="tgimages" src="images/stickfigurebadminton2.png" alt="stick figure badminton 2" style="width:65px;height:65px" onclick="window.location.href = &quot;gameplayer.html?game=stickfigurebadminton2&quot;;" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = &quot;gameplayer.html?game=stickfigurebadminton2&quot;;"> Stick Figure Badminton 2</p></div>',
@@ -47,9 +47,10 @@ gameElements = [
   '<div class="games"><p><image class="tgimages" src="images/electricman2.png" alt="ElectricMan 2" style="width:65px;height:65px" onclick="window.location.href = &quot;gameplayer.html?game=electricman2&quot;;" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = &quot;gameplayer.html?game=electricman2&quot;;"> Electric Man 2</p></div>',
   '<div class="games"><p><image class="tgimages" src="images/swordsandsandals.png" alt="Swords and Sandals" style="width:65px;height:65px" onclick="window.location.href = &quot;gameplayer.html?game=swords_and_sandals_gladiator&quot;;" /><input class="buttontg" type="button" value="Play Game" onclick="window.location.href = &quot;gameplayer.html?game=swords_and_sandals_gladiator&quot;;"> Swords and Sandals</p></div>'
 ]
-shuffleArray(gameElements);
+var RandomizedGameElements = gameElements;
+shuffleArray(RandomizedGameElements);
 var LoadMoreBtn = '<input type="button" id="loadmore" class="button" value="Load More Games" onclick="LoadMoreGames()">';
-var remainingElements = gameElements;
+var remainingElements = RandomizedGameElements;
 var i = 0;
 
 /* //Loads some games but dublicates in some cases.
@@ -64,8 +65,8 @@ while (i < gameElements.length) {
   }
   i+=1;
 }*/
-while (i < gameElements.length) { //Randomizes and loads all games at once.
-  document.getElementsByClassName('row')[0].innerHTML += gameElements[i];
+while (i < RandomizedGameElements.length) { //Randomizes and loads all games at once.
+  document.getElementsByClassName('row')[0].innerHTML += RandomizedGameElements[i];
   //console.log(i);
   i+=1;
 }

@@ -24,6 +24,12 @@ h1 {
   padding: 10px;
   background-color: white; /* NOTE: bgcolor */
 }
+#recentgames {
+  border: 5px solid yellow;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: white;
+}
 #slidezlogo {
   border-radius: 6%;
 }
