@@ -311,10 +311,11 @@ if(cp=='game=super-smash-flash-2'){
 }
 if (cp=='game=playing-with-fire-2') {
 	console.log("Loading Playing with fire 2");
-	document.getElementById('gameplayer').innerHTML = '<object width="800" height="600" data="https://cdn.rawgit.com/kres0345/swfgames/d251f874/playing-with-fire-2.swf"></object>'
+	document.getElementById('gameplayer').innerHTML = '<object width="800" height="593" data="https://cdn.rawgit.com/kres0345/swfgames/d251f874/playing-with-fire-2.swf"></object>'
 	document.getElementById('description').innerHTML = '<p><b>This game is made by An Awesome Person</b> This game is a good game</p>'
 	document.getElementById('title').innerHTML = '<h1>Playing with fire 2</h1>'
 	document.getElementById('tabtitle').innerHTML = "Playing with fire 2 - FrostBurn Games"
+	var runcorrect = true
 }
 if(cp=='game=template'){
   console.log("Loading Template")
